@@ -4,19 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.changenode</groupId>
-    <artifactId>maven-jpackage-template</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <groupId>com.vending</groupId>
+    <artifactId>Guhan-Vending</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <!-- This description text is included in the Windows installer by default, see windows-jpackage.txt -->
     <description>Sample JavaFX Application</description>
 
     <properties>
         <!-- Set this to the class with the main method for your application -->
-        <main-class>com.changenode.BaseApplication</main-class>
+        <main-class>com.vending.BaseApplication</main-class>
         <!-- Change your app's name to something interesting... but you might want to avoid spaces
         just to safe for compatibility across operating systems. -->
-        <app.name>TestApp</app.name>
+        <app.name>Vending Machine</app.name>
         <!-- This converts the build timestamp to a Windows-installer friendly version number (minute level resolution).
         Note that Maven generated timestamp is in UTC, not local time. For more information see:
          https://docs.microsoft.com/en-us/windows/win32/msi/productversion
@@ -64,6 +64,36 @@
             <groupId>io.github.mkpaz</groupId>
             <artifactId>atlantafx-base</artifactId>
             <version>1.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-controls</artifactId>
+            <version>17.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-fxml</artifactId>
+            <version>17.0.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-media</artifactId>
+            <version>12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-swing</artifactId>
+            <version>12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>12</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
         </dependency>
     </dependencies>
 
